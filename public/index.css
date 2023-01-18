@@ -22,24 +22,54 @@ body{
     height: 100vh;
  
 }
-body  a:hover {
+#menu  a:hover {
     text-decoration: underline;
     color: white;
     font-size: 1.3em;
+}
+#menu_top img:hover{
+    background-color: black;
+    border: 5px solid red;
+    border-radius: 10px;
+    
 }
 header{
     display: flexbox;
     margin: auto;
     text-align: center;
     background-color:gray;
+    padding: 20px;
+    font-family: var(--font1);
 
     
+}
+header h1{
+    padding: 20px;
 }
 nav a{
     padding: 30px;
     margin: auto;
+    font-family: var(--font2);
     
 }
 #menu_top{
-    display: inline;
+    display: flex;
+    
+   
+}
+.social_media{
+    text-align: left;
+   
+    width: 50%;
+}
+.contact {
+    justify-content: end;
+    width: 50%;
+    display: flex;
+}
+.contact a{
+    margin-right:10px ;
+}
+.contact p{
+    font-size: 1.3em;
 }
