@@ -26,20 +26,74 @@ body{
 
 header{
     display: flexbox;
+    justify-content: space-between;
     margin: auto;
     text-align: center;
     background-color:gray;
     padding: 20px;
     font-family: var(--font1);
     background-image: url(../Imagens/pngtree-climber-and-purple-mountain-background-image_389792.jpg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
     
 }
-#menu_top{
+/*_______Responsive-menu_______*/
+
+.mobile-menu-icon,
+.mobile-menu{
+    text-align: end;
+    display: block;
+    
+}
+@media screen and (max-width:730px){
+    
+    #menu_top,
+    #menu-bottom{
+        display: none;
+    }
+    
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .nav-mobile-item ul{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .nav-mobile-item li{
+        list-style: none;
+    }
+    .nav-mobile-item{
+        display: none;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: block;
+    }
+    
+
+
+}   
+
+
+
+/*_____________________________*/
+.menu_top{
     display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+    padding: 20px;
+    width: 100%;
     
    
 }
@@ -51,40 +105,50 @@ header{
     
 }
 
-.social_media{
-    text-align: left;
-   
-    width: 50%;
-}
 .contact {
     justify-content: end;
     width: 50%;
     display: flex;
+    gap: 0.5rem;
 }
-.contact a{
-    margin-right:10px ;
-}
+
 .contact p{
     font-size: 1.3em;
+    color: white;
+}
+#menu-center{
+    padding: 20px;
+    font-family: var(--font2);
 }
 header h1{
     padding: 20px;
 }
 
-#menu_bottom a{
+#menu-bottom{
+    background-color: var(--color1);
+}
+#menu-bottom ul{
+    padding: 5px;
+}
+#menu-bottom a{
     color: white;
     margin-left: 20;
-    padding: 5px;
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1rem;
     font-family: var(--font2);
 }
-#menu_bottom  a:hover {
+#menu-bottom  a:hover {
     text-decoration: underline;
     background-color: white;
     color: var(--color1);
-    font-size: 1.3em;
+    font-size: 1.1em;
     border-radius: 10px;
 }
-#menu_center{
-    padding: 20px;
-    font-family: var(--font2);
+.nav-item{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 0.5rem;
 }
+
