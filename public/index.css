@@ -42,10 +42,14 @@ header{
 }
 /*_______Responsive-menu_______*/
 
-.mobile-menu-icon,
-.nav-mobile-item{
-    text-align: end;
+.mobile-menu-icon{
     display: none;
+    text-align: end;
+}
+.nav-mobile-item{
+    
+    display: none;
+    padding: 1em;   
     
 }
 @media screen and (max-width:800px){
@@ -53,6 +57,11 @@ header{
     #menu_top,
     #menu-bottom{
         display: none;
+    }
+    .menu-bar{
+        background-color: var(--color1);
+        width: 100%;
+        padding: 0.9em;
     }
     
     .mobile-menu-icon{
@@ -68,13 +77,32 @@ header{
         flex-direction: column;
         text-align: center;
         padding-top: 1rem;
-    }
-    .nav-mobile-item li{
-        list-style: none;
+        
     }
     .nav-mobile-item{
         display: none;
         padding-top: 1.2rem;
+        
+    }
+    .nav-mobile-item li{
+        list-style: none;        
+    }
+    .nav-mobile-item li:hover{
+        background: white;
+        border-radius: 8px;
+        
+    }
+   
+    .nav-mobile-item a{
+        color: white;
+        
+    }
+    .nav-mobile-item a:hover{
+        color: var(--color1);
+    }
+    .mobile-menu{
+        width: 100%;
+        background-color: var(--color1);
     }
     .open{
         display: block;
