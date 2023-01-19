@@ -30,7 +30,7 @@ header{
     margin: auto;
     text-align: center;
     background-color:gray;
-    padding: 20px;
+    
     font-family: var(--font1);
     background-image: url(../Imagens/pngtree-climber-and-purple-mountain-background-image_389792.jpg);
     
@@ -46,10 +46,11 @@ header{
     display: none;
     text-align: end;
 }
-.nav-mobile-item{
+.menu-bar,.nav-mobile-item{
     
     display: none;
-    padding: 1em;   
+    padding: 1em; 
+
     
 }
 @media screen and (max-width:800px){
@@ -59,6 +60,7 @@ header{
         display: none;
     }
     .menu-bar{
+        display: block;
         background-color: var(--color1);
         width: 100%;
         padding: 0.9em;
