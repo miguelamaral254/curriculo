@@ -43,12 +43,12 @@ header{
 /*_______Responsive-menu_______*/
 
 .mobile-menu-icon,
-.mobile-menu{
+.nav-mobile-item{
     text-align: end;
-    display: block;
+    display: none;
     
 }
-@media screen and (max-width:730px){
+@media screen and (max-width:700px){
     
     #menu_top,
     #menu-bottom{
@@ -65,7 +65,6 @@ header{
     }
     .nav-mobile-item ul{
         display: flex;
-        background-color: white;
         flex-direction: column;
         text-align: center;
         padding-top: 1rem;
