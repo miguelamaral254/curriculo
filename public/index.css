@@ -87,10 +87,12 @@ header{
         
     }
     .nav-mobile-item li{
-        list-style: none;        
+        list-style: none;
+           
     }
     .nav-mobile-item li:hover{
         background: white;
+        color: var(--color1);
         border-radius: 8px;
         
     }
@@ -148,6 +150,7 @@ header{
 #menu-center{
     padding: 20px;
     font-family: var(--font2);
+    
 }
 header h1{
     padding: 20px;
@@ -181,3 +184,19 @@ header h1{
     gap: 0.5rem;
 }
 
+/*Header end*/
+
+/*Main start*/
+.sec-img{
+    background-image: url(../Imagens/pngtree-climber-and-purple-mountain-background-image_389792.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 1px 1px 10px black;
+    padding: 20px;
+
+    
+}
+.sec-regular{
+    padding: 20px;
+}
