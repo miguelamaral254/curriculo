@@ -1,0 +1,26 @@
+.sec-img{
+    background-image: url(../Imagens/pngtree-climber-and-purple-mountain-background-image_389792.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 1px 1px 10px black;
+    padding: 20px;
+    color: white;
+
+    
+}
+.sec-regular{
+    padding: 20px;
+}
+#sec-1{
+    display: flex;
+
+}
+.sec-reg-rightside{
+    background-color: red;
+    width: 50%;
+}
+.sec-reg-leftside{
+    background-color: blue;
+    width: 50%;
+}
