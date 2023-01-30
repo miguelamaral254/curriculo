@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "curriculo"
+    "liveServer.settings.multiRootWorkspaceName": "curriculo",
+    "liveServer.settings.port": 5502
 }
