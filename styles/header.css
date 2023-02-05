@@ -93,6 +93,7 @@ header{
     .nav-mobile-item li:hover{
         background: white;
         color: var(--color1);
+        padding: 1em;
         border-radius: 8px;
         
     }
